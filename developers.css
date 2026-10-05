@@ -1,0 +1,327 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    color: #1a1a1a;
+    background-color: #ffffff;
+}
+
+.navbar {
+    background-color: #ffffff;
+    border-bottom: 1px solid #eee;
+}
+
+.navbar-brand {
+    font-size: 18px;
+    color: #1a1a1a;
+}
+
+.divider {
+    color: #ccc;
+    margin: 0 4px;
+}
+
+.nav-links a {
+    color: #1a1a1a;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.nav-links a:hover {
+    color: #e05c5c;
+}
+
+.login-btn {
+    background-color: white;
+    border: 1px solid #1a1a1a;
+    color: #1a1a1a;
+    font-weight: 600;
+    padding: 9px 18px;
+    border-radius: 6px;
+}
+
+.signup-btn {
+    background-color: #1a1a1a;
+    color: white;
+    font-weight: 600;
+    padding: 9px 18px;
+    border: none;
+    border-radius: 6px;
+}
+
+.hero-dev {
+    padding: 70px 20px 60px;
+}
+
+.squares-deco {
+    position: absolute;
+    top: -20px;
+    right: -60px;
+    width: 500px;
+    height: 220px;
+    z-index: -1;
+}
+
+.sq {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    transform: rotate(25deg);
+    border-radius: 6px;
+    opacity: 0.85;
+}
+
+.sq-1 { background-color: #4fb8c9; top: 10px; left: 0; }
+.sq-2 { background-color: #e8b800; top: 40px; left: 110px; }
+.sq-3 { background-color: #8bc34a; top: 70px; left: 220px; }
+.sq-4 { background-color: #e05c5c; top: 100px; left: 330px; }
+.sq-5 { background-color: #e08b23; top: 20px; left: 400px; }
+
+.dev-title {
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 1.2;
+    max-width: 650px;
+}
+
+.accent-red {
+    color: #e05c5c;
+}
+
+.dev-sub {
+    font-size: 17px;
+    color: #555;
+    margin-top: 20px;
+    max-width: 550px;
+}
+
+.dev-sub a {
+    color: #4fb8c9;
+    font-weight: 600;
+}
+
+.icon-row p {
+    font-size: 13px;
+    color: #666;
+    margin-top: 8px;
+    line-height: 1.5;
+}
+
+.icon-box {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+
+.icon-title {
+    font-family: 'Courier New', monospace;
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.icon-title.mcp { color: #ff6b6b; }
+.icon-title.create { color: #8bc34a; }
+.icon-title.responses { color: #e8b800; }
+.icon-title.webhooks { color: #a569d9; }
+.icon-title.embed { color: #e08b23; }
+
+.apis-intro {
+    background-color: #2e3442;
+    color: white;
+    padding: 70px 20px;
+}
+
+.apis-intro h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.apis-intro > .container > p {
+    color: #c9ccd3;
+    font-size: 17px;
+    line-height: 1.7;
+    max-width: 700px;
+}
+
+.api-pairs {
+    margin-top: 70px;
+}
+
+.api-pair {
+    margin-bottom: 70px;
+}
+
+.api-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Courier New', monospace;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 14px;
+}
+
+.api-icon-sm {
+    width: 32px;
+    height: 32px;
+    border: 2px solid currentColor;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.api-label.mcp { color: #ff6b6b; }
+.api-label.create { color: #8bc34a; }
+.api-label.responses { color: #e8b800; }
+.api-label.webhooks { color: #a569d9; }
+.api-label.embed { color: #e08b23; }
+
+.api-pair p {
+    color: #c9ccd3;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.learn-btn {
+    font-family: 'Courier New', monospace;
+    font-weight: 700;
+    font-size: 13px;
+    color: #2e3442;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+}
+
+.learn-btn.mcp { background-color: #ff6b6b; }
+.learn-btn.create { background-color: #8bc34a; }
+.learn-btn.responses { background-color: #e8b800; }
+.learn-btn.webhooks { background-color: #a569d9; }
+.learn-btn.embed { background-color: #e08b23; }
+
+.code-block {
+    background-color: #454c5c;
+    color: #e8e8e8;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    line-height: 1.8;
+    padding: 20px;
+    border-radius: 6px;
+    border-left: 8px solid;
+    overflow-x: auto;
+    white-space: pre;
+}
+
+.code-block.mcp { border-color: #ff6b6b; }
+.code-block.create { border-color: #8bc34a; }
+.code-block.responses { border-color: #e8b800; }
+.code-block.webhooks { border-color: #a569d9; }
+.code-block.embed { border-color: #e08b23; }
+
+.endpoints-section {
+    background-color: #ffffff;
+    padding: 80px 20px 60px;
+}
+
+.endpoints-section h2 {
+    font-family: 'Courier New', monospace;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.endpoint-pills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.pill-btn {
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    font-family: 'Courier New', monospace;
+    font-weight: 700;
+    padding: 16px 24px;
+    border-radius: 8px;
+    min-width: 170px;
+}
+
+.dev-footer {
+    background-color: #ffffff;
+    padding: 60px 20px 30px;
+    border-top: 1px solid #eee;
+}
+
+.dev-footer h6 {
+    color: #888;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    margin-bottom: 14px;
+}
+
+.dev-footer a {
+    display: block;
+    color: #4fb8c9;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.dev-footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-socials a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.dev-footer hr {
+    border-color: #eee;
+    margin: 30px 0 20px;
+}
+
+.footer-bottom {
+    font-size: 13px;
+    color: #888;
+}
+
+.footer-bottom a {
+    display: inline;
+    color: #888;
+}
+
+@media (max-width: 991px) {
+    .dev-title {
+        font-size: 34px;
+    }
+
+    .squares-deco {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .dev-title {
+        font-size: 28px;
+    }
+
+    .apis-intro h2 {
+        font-size: 26px;
+    }
+}
